@@ -11,7 +11,7 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkM2RiMzI1NjRlZTNhNWNhNjVlNGVhNzVkYjIzZDc4ZCIsIm5iZiI6MTY5NTk1MjU2MS4xODQsInN1YiI6IjY1MTYyZWIxOTNiZDY5MDBmZTQ3ZGFjNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.NDAKBYcUoOZ-uUs1aovl_plyl3XgurJzfjRyT1cED70",
+      process.env.REACT_APP_API_OPTIONS_Authorization,
   },
 };
 

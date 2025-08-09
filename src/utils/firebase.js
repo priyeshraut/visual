@@ -7,7 +7,7 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBWo1Q53ccz76puwScuH05yZxf8qY3LY24",
+  apiKey: process.env.REACT_APP_FIRSEBASE_APIKEY,
   authDomain: "visual-bbe2e.firebaseapp.com",
   projectId: "visual-bbe2e",
   storageBucket: "visual-bbe2e.appspot.com",
