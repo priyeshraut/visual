@@ -24,7 +24,7 @@ const useHome = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [movies, index]);
 
   return {movies, carouselRef};
 };
