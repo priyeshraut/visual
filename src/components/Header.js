@@ -36,8 +36,8 @@ const Header = () => {
                 <NavLink
                   to={nav.href}
                   className={({ isActive }) =>
-                    `text-neutral-400 text-lg font-medium duration-300 transform transition-all hover:text-neutral-100 ${
-                      isActive ? "text-neutral-100" : ""
+                    `text-lg font-medium duration-300 transform transition-all hover:text-neutral-100 ${
+                      isActive ? "text-neutral-100" : "text-neutral-400"
                     }`
                   }
                 >
@@ -59,8 +59,15 @@ const Header = () => {
         <div className="flex flex-col gap-2 justify-center items-center cursor-pointer relative group">
           <div className="flex gap-3">
             {user?.photoURL ? (
-              <div onClick={handleToggleVisibility} className="flex justify-center items-center gap-1 w-9">
-                <img className="wfull h-full object-cover border rounded-full" src={user.photoURL} alt="profile img"/>
+              <div
+                onClick={handleToggleVisibility}
+                className="flex justify-center items-center gap-1 w-9"
+              >
+                <img
+                  className="wfull h-full object-cover border rounded-full"
+                  src={user.photoURL}
+                  alt="profile img"
+                />
                 <FontAwesomeIcon
                   className="text-lg text-white p-2"
                   icon={faAngleDown}
