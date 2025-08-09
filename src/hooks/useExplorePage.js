@@ -56,7 +56,7 @@ const useExplorePage = () => {
 
   useEffect(() => {
     getData();
-  }, [page]);
+  }, []);
 
   useEffect(() => {
     // Reset state when category changes and fetch fresh data

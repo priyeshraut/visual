@@ -23,7 +23,3 @@ This project was an incredible learning journey—combining **UI/UX design, stat
 
 \#ReactJS #TailwindCSS #Redux #Firebase #WebDevelopment #Frontend #MovieWebsite #JavaScript #CodingJourney #ShimmerEffect #InfiniteScroll #SearchFunctionality
 
----
-
-If you want, I can make a **short, catchy storytelling version** with a hook that will grab recruiters' and developers' attention instantly on LinkedIn.
-That will make your post more engaging and shareable.

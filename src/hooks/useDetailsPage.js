@@ -52,7 +52,7 @@ const useDetailsPage = () => {
 
   useEffect(() => {
     getMoviesTVDetails();
-  }, [param.id]); // Add param.id as a dependency
+  }, []); 
 
   const duration = Number(data?.details?.runtime / 60)
     .toFixed(1)
