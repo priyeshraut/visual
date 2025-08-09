@@ -80,7 +80,7 @@ const Header = () => {
             )}
           </div>
           {showData && (
-            <div className="borde-none bg-[#0F1014]/75 rounded p-2 absolute top-9 right-0 -left-[7rem] hidden group-hover:block">
+            <div className="borde-none bg-[#0F1014]/75 rounded p-2 absolute top-9 -right-4 -left-[7rem] hidden group-hover:block">
               <p className="text-lg text-white/85 cursor-default">
                 {user?.displayName}
               </p>
