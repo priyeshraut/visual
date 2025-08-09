@@ -1,7 +1,3 @@
-Alright — here’s your LinkedIn post now including **search functionality** along with **shimmer effect** and **infinite scrolling** so it feels complete and natural:
-
----
-
 🚀 **Just Wrapped Up My Movie Website Project!** 🎬
 
 I recently built a **fully responsive movie website** using:
