@@ -1,4 +1,3 @@
-import React from "react";
 import { profilePic, DetailSimmerCardsCont } from "../utils/constants";
 
 const DetailsPageSimmer = () => {

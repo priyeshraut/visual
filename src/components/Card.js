@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { baseUrl } from "../utils/constants";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,7 +20,6 @@ const Card = ({ data }) => {
   };
 
   if (!data || !data?.poster_path) return null;
-  // console.log(data);
 
   return (
     <div className="relative group">

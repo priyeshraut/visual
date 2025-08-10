@@ -27,7 +27,6 @@ const useExplorePage = () => {
       );
 
       const json = await res.json();
-      //   console.log("Fetched Data:", json.results.length, "items");
 
       setTotalPages(json.total_pages);
 

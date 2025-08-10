@@ -1,4 +1,3 @@
-import React from "react";
 import { movieCardsCont } from "../../utils/constants";
 
 const HomePageSimmer = () => {

@@ -1,4 +1,3 @@
-// useTrailerVideo.js
 import { useDispatch } from "react-redux";
 import { API_OPTIONS } from "../utils/constants";
 import { addTrailerVideo } from "../utils/moviesSlice";

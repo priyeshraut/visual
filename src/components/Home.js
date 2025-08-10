@@ -17,7 +17,6 @@ const Home = () => {
   useOnTheAirTvShows();
   useTopRated();
   usePopular();
-  // usePopular2();
   useUpcomingMovies();
   const { movies, carouselRef } = useHome();
 

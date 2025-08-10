@@ -1,5 +1,3 @@
-import React from "react";
-
 const SearchSimmer = () => {
   const Cards = Array.from({ length: 50 }).map((_, idx) => (
     <div

@@ -1,4 +1,3 @@
-import React from "react";
 import { mobileNavigation } from "../utils/constants";
 import { NavLink } from "react-router-dom";
 
