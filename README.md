@@ -17,8 +17,10 @@
 
 This project was an incredible learning journey—combining **UI/UX design, state management, authentication, search, and performance optimization** into one complete application.
 
-💡 Live Project: visualweb.netlify.app
+💡 Live Project: [visualweb.netlify.app](https://visualweb.netlify.app)
 
-Enroll Namaste React Course: namastedev.com/learn/namaste-react?_aff=946684857463
-Enroll Namaste Frontend System Design: namastedev.com/learn/namaste-frontend-system-design?_aff=946684857463
-Enroll Namaste Node.js: namastedev.com/learn/namaste-node?_aff=946684857463
+Enroll Namaste React Course: [namastedev.com/learn/namaste-react?_aff=946684857463](https://namastedev.com/learn/namaste-react?_aff=946684857463)
+
+Enroll Namaste Frontend System Design: [namastedev.com/learn/namaste-frontend-system-design?_aff=946684857463](https://namastedev.com/learn/namaste-frontend-system-design?_aff=946684857463)
+
+Enroll Namaste Node.js: [namastedev.com/learn/namaste-node?_aff=946684857463](https://namastedev.com/learn/namaste-node?_aff=946684857463)
