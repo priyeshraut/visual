@@ -19,7 +19,6 @@ I recently built a **fully responsive movie website** using:
 This project was an incredible learning journey—combining **UI/UX design, state management, authentication, search, and performance optimization** into one complete application.
 
 💡 Live Project: visualweb.netlify.app
-📂 GitHub Repo: github.com/priyeshraut/visual.git
 
 \#ReactJS #TailwindCSS #Redux #Firebase #WebDevelopment #Frontend #MovieWebsite #JavaScript #CodingJourney #ShimmerEffect #InfiniteScroll #SearchFunctionality
 
