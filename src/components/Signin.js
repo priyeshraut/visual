@@ -77,7 +77,7 @@ const Signin = () => {
             {isSignInForm ? "Sign up" : "Sign In"}
           </button>
         </div>
-        <div className="w-full flex justify-center items-center border border-white rounded-md">
+        {/* <div className="w-full flex justify-center items-center border border-white rounded-md">
           <button
             type="button"
             className="flex justify-center items-center"
@@ -86,7 +86,7 @@ const Signin = () => {
             <img className="w-14" src={googleLogo} alt="" />
             <p>Sign in with Google</p>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
