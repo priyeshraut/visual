@@ -45,12 +45,12 @@ const useSignin = () => {
               dispath(addUser({ displayName: auth.currentUser.displayName }));
             })
             .catch((error) => {
-              setErrorMessage(error.message);
+              setErrorMessage("Something went wrong please try again after some time");
             });
           navigate("/");
         })
         .catch(() => {
-          setErrorMessage("Please, fill the Sign Up form");
+          setErrorMessage("Email already in use");
         });
     } else {
       signInWithEmailAndPassword(

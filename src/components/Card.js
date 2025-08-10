@@ -25,15 +25,15 @@ const Card = ({ data }) => {
     <div className="relative group">
       <div
         onClick={handleClick}
-        className="w-full cursor-pointer aspect-[2/3] transform transition duration-300 group-hover:scale-125 group-hover:z-20 relative"
+        className="w-full cursor-pointer aspect-[2/3] transform transition duration-300 md:group-hover:scale-125 md:group-hover:z-20 relative"
       >
         <img
-          className="w-full h-full object-cover rounded group-hover:brightness-50"
+          className="w-full h-full object-cover rounded md:group-hover:brightness-50"
           src={baseUrl + data?.poster_path}
           alt="movieListImage"
         />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 p-2 transform transition duration-700 group-hover:scale-125 group-hover:z-20 hidden group-hover:block">
+      <div className="absolute bottom-0 left-0 right-0 p-2 transform transition duration-700 md:group-hover:scale-125 md:group-hover:z-20 hidden md:group-hover:block">
         <div className="flex justify-between gap-2 items-start">
           <div>
             <h5 className="text-sm font-medium text-white line-clamp-1">

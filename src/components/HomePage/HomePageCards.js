@@ -29,12 +29,12 @@ const HomePageCards = ({ data }) => {
         className="flex-grow flex-shrink-0 basis-full snap-start w-28 sm:w-44 md:w-48 mt-4 cursor-pointer group-hover:rounded  relative"
       >
         <img
-          className="w-full h-full object-cover rounded   group-hover:brightness-50"
+          className="w-full h-full object-cover rounded md:group-hover:brightness-50"
           src={baseUrl + data?.poster_path}
           alt="movieListImage"
         />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 p-2 hidden group-hover:block">
+      <div className="absolute bottom-0 left-0 right-0 p-2 hidden md:group-hover:block">
         <div className="flex justify-between gap-2 items-start">
           <div>
             <h5 className="text-sm font-medium text-white line-clamp-1">

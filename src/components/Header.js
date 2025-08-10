@@ -58,33 +58,34 @@ const Header = () => {
         </div>
         <div className="flex flex-col gap-2 justify-center items-center cursor-pointer relative group">
           <div className="flex gap-3">
-            {user?.photoURL ? (
-              <div
-                onClick={handleToggleVisibility}
-                className="flex justify-center items-center gap-1 w-9"
-              >
+            <div onClick={handleToggleVisibility} className="flex items-center">
+              {user?.photoURL ? (
                 <img
-                  className="wfull h-full object-cover border rounded-full"
+                  className="w-9 h-9 object-cover border rounded-full"
                   src={user.photoURL}
-                  alt="profile img"
+                  alt=""
+                  onError={(e) => {
+                    e.target.onerror = null; // infinite loop avoid
+                    e.target.style.display = "none"; // Hide image  
+                    e.target.parentNode.insertAdjacentHTML(
+                      "afterbegin",
+                      `<svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-white border rounded-full p-2" fill="currentColor" viewBox="0 0 448 512">
+                 <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zM313.6 288h-16.7c-22.2 10.3-46.9 16-72.9 16s-50.6-5.7-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/>
+                </svg>`
+                    );
+                  }}
                 />
-                <FontAwesomeIcon
-                  className="text-lg text-white p-2"
-                  icon={faAngleDown}
-                />
-              </div>
-            ) : (
-              <div onClick={handleToggleVisibility}>
+              ) : (
                 <FontAwesomeIcon
                   className="text-lg text-white border rounded-full p-2"
                   icon={faUser}
                 />
-                <FontAwesomeIcon
-                  className="text-lg text-white p-2"
-                  icon={faAngleDown}
-                />
-              </div>
-            )}
+              )}
+              <FontAwesomeIcon
+                className="text-lg text-white p-2"
+                icon={faAngleDown}
+              />
+            </div>
           </div>
           {showData && (
             <div className="borde-none bg-[#0F1014]/75 rounded p-2 absolute top-9 -right-4 -left-[7rem] hidden group-hover:block">
