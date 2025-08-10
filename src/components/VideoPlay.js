@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const VideoPlay = ({ media_type, id, close }) => {
   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
 
-  useTrailerVideo(media_type, id);
+  const loading = useTrailerVideo(media_type, id);
 
   return (
     <section className="fixed top-0 right-0 bottom-0 left-0 z-50 bg-neutral-700 bg-opacity-50 flex justify-center items-center">
@@ -17,8 +17,15 @@ const VideoPlay = ({ media_type, id, close }) => {
             className="text-white text-2xl absolute -top-6 right-0 cursor-pointer"
           />
         </button>
-        {!trailerVideo ? (
-          <div className="text-white font-bold text-2xl text-center flex justify-center items-center h-[80vh]">Video is not available</div>
+
+        {loading ? (
+          <p className="text-white text-md flex justify-center items-center h-full">
+            Loading trailer...
+          </p>
+        ) : !trailerVideo?.key ? (
+          <div className="text-white text-xl flex justify-center items-center h-full">
+            No trailer available
+          </div>
         ) : (
           <iframe
             className="w-full h-full absolute top-0 aspect-video"
